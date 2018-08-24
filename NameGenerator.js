@@ -6,11 +6,14 @@ var surnames = ["Smith", "Jones"];
 var limit = 0;
 
 //Get titles from JSON - again this is just a test
-$.getJSON("https://spreadsheets.google.com/feeds/list/1SJsdbHnylM69OTft9eiI1AfCJ0PxLkVUNZk-Fq80gT0/od6/public/basic?alt=json", function(result){
-    $.each(result, function(i, field){
-        console.log(field);
-    });
-});
+$.getJSON("https://spreadsheets.google.com/feeds/list/1SJsdbHnylM69OTft9eiI1AfCJ0PxLkVUNZk-Fq80gT0/od6/public/basic?alt=json", 
+    function(result){
+        $.each(result, function(i, field){
+            console.log(field);
+            var parsedOutput = JSON.parse(field);
+        });
+    }
+);
 
 //Generates a random number between 0 and the limit
 function random(limit){
