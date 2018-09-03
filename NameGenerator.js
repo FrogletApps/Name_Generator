@@ -1,16 +1,32 @@
-//This are test fields, they shouldn't last long
-var titles = ["Capt", "Cmdr", "Col", "Cpl", "Dr", "Gen", "Hon", "Lady", "Lord", "Lt", "Lt Col", "Maj", "Master", "Miss", "Mr", "Mrs", "Ms", "Prof", "Pvt", "Rev", "Rt Hon", "Sgt"]
-var forenames = ["John", "Jane"];
-var surnames = ["Smith", "Jones"];
+var titles = [];
+var forenames = [];
+var surnames = [];
 
 var limit = 0;
 
-//Get titles from JSON - again this is just a test
-$.getJSON("https://spreadsheets.google.com/feeds/list/1SJsdbHnylM69OTft9eiI1AfCJ0PxLkVUNZk-Fq80gT0/od6/public/basic?alt=json", 
-    function(result){
-        $.each(result, function(i, field){
-            console.log(field);
-            var parsedOutput = JSON.parse(field);
+//Get titles from JSON
+$.getJSON("https://frogletapps.github.io/Name_Generator/titles.json", 
+    function(jsonTitles){
+        $.each(jsonTitles, function(i, field){
+            titles.push(field);
+        });
+    }
+);
+
+//Get forenames from JSON
+$.getJSON("https://frogletapps.github.io/Name_Generator/forenames.json", 
+    function(jsonForenames){
+        $.each(jsonForenames, function(i, field){
+            forenames.push(field);
+        });
+    }
+);
+
+//Get surnames from JSON
+$.getJSON("https://frogletapps.github.io/Name_Generator/surnames.json", 
+    function(jsonSurnames){
+        $.each(jsonSurnames, function(i, field){
+            surnames.push(field);
         });
     }
 );
