@@ -5,7 +5,7 @@ var surnames = [];
 var limit = 0;
 
 //Get titles from JSON
-$.getJSON("https://frogletapps.github.io/Name_Generator/titles.json", 
+$.getJSON("https://frogletapps.github.io/Name_Generator/json/titles.json", 
     function(jsonTitles){
         $.each(jsonTitles, function(i, field){
             titles.push(field);
@@ -14,7 +14,7 @@ $.getJSON("https://frogletapps.github.io/Name_Generator/titles.json",
 );
 
 //Get forenames from JSON
-$.getJSON("https://frogletapps.github.io/Name_Generator/forenames.json", 
+$.getJSON("https://frogletapps.github.io/Name_Generator/json/forenames.json", 
     function(jsonForenames){
         $.each(jsonForenames, function(i, field){
             forenames.push(field);
@@ -23,7 +23,7 @@ $.getJSON("https://frogletapps.github.io/Name_Generator/forenames.json",
 );
 
 //Get surnames from JSON
-$.getJSON("https://frogletapps.github.io/Name_Generator/surnames.json", 
+$.getJSON("https://frogletapps.github.io/Name_Generator/json/surnames.json", 
     function(jsonSurnames){
         $.each(jsonSurnames, function(i, field){
             surnames.push(field);
