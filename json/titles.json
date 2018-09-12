@@ -1,90 +1,112 @@
-{
-"Capt":{
+[
+    {
+        "value": "Capt",
         "gender": "N",
         "rare": true 
     },
-"Cmdr":{
+    {
+        "value": "Cmdr",
         "gender": "N",
         "rare": true 
     },
-"Col":{
+    {
+        "value": "Col",
         "gender": "N",
         "rare": true 
     },
-"Cpl":{
+    {
+        "value": "Cpl",
         "gender": "N",
         "rare": true 
     },
-"Dr":{
+    {
+        "value": "Dr",
         "gender": "N",
         "rare": false 
     },
-"Gen":{
+    {
+        "value": "Gen",
         "gender": "N",
         "rare": true 
     },
-"Hon":{
+    {
+        "value": "Hon",
         "gender": "N",
         "rare": true 
     },
-"Lady":{
+    {
+        "value": "Lady",
         "gender": "F",
         "rare": true 
     },
-"Lord":{
+    {
+        "value": "Lord",
         "gender": "M",
         "rare": true 
     },
-"Lt":{
+    {
+        "value": "Lt",
         "gender": "N",
         "rare": true 
     },
-"Lt Col":{
+    {
+        "value": "Lt Col",
         "gender": "N",
         "rare": true 
     },
-"Maj":{
+    {
+        "value": "Maj",
         "gender": "N",
         "rare": true 
     },
-"Master":{
+    {
+        "value": "Master",
         "gender": "M",
         "rare": false 
     },
-"Miss":{
+    {
+        "value": "Miss",
         "gender": "F",
         "rare": false
     },
-"Mr":{
+    {
+        "value": "Mr",
         "gender": "M",
         "rare": false 
     },
-"Mrs":{
+    {
+        "value": "Mrs",
         "gender": "F",
         "rare": false
     },
-"Ms":{
+    {
+        "value": "Ms",
         "gender": "F",
         "rare": false
     },
-"Prof":{
+    {
+        "value": "Prof",
         "gender": "N",
         "rare": false
     },
-"Pvt":{
+    {
+        "value": "Pvt",
         "gender": "N",
         "rare": true
     },
-"Rev":{
+    {
+        "value": "Rev",
         "gender": "N",
         "rare": true
     },
-"Rt Hon":{
+    {
+        "value": "Rt Hon",
         "gender": "N",
         "rare": true 
     },
-"Sgt":{
+    {
+        "value": "Sgt",
         "gender": "N",
         "rare": true 
     }
-}
+]
