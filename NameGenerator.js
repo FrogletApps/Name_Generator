@@ -2,6 +2,8 @@ var titles = [];
 var forenames = [];
 var surnames = [];
 
+var randomTitle;
+
 var limit = 0;
 
 var surnamesJSON = "https://frogletapps.github.io/Name_Generator/json/surnames.json";
@@ -35,17 +37,29 @@ $.getJSON("https://frogletapps.github.io/Name_Generator/json/surnames.json",
 );
 
 function getValues(jsonUrl){
-    $.getJSON(jsonData, 
+    var data = [];      //Array to store the JSON data in
+    var randomChoice;   //Number in the array to pick
+    var result;         //Result
+
+    $.getJSON(jsonUrl, 
         function(jsonData){
+            $.each(jsonData, function(i, field){
+                data.push(field);
+            });
             //Length of the JSON array
             var jsonLength = Object.keys(jsonData).length
             //Number in the array to pick
-            var randomChoice = random(jsonLength - 1);
-
-            var name = jsonData(randomChoice).value;
-            return name;
+            randomChoice = random(jsonLength - 1);
+            console.log(randomChoice + 1);
+            console.log(data[randomChoice].value);
+            result = data[randomChoice].value;
+            //This is a nasty hack but it will work for testing
+            randomTitle = result;
+            console.log(randomTitle);
         }
     );
+    console.log(result);
+    return result;
 }
 
 //Generates a random number between 0 and the limit
@@ -56,7 +70,8 @@ function random(limit){
 //Choose a random name
 function choose(){
     //Get a random title/name from the list
-    var randomTitle = getValues(titlesJSON);
+    getValues(titlesJSON);
+    //var randomTitle = getValues(titlesJSON);
     var randomForename = forenames[random(forenames.length-1)];
     var randomSurname = surnames[random(surnames.length-1)];
     //Output it
