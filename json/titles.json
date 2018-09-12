@@ -1,24 +1,90 @@
-[
-"Capt",
-"Cmdr",
-"Col",
-"Cpl",
-"Dr",
-"Gen",
-"Hon",
-"Lady",
-"Lord",
-"Lt",
-"Lt Col",
-"Maj",
-"Master",
-"Miss",
-"Mr",
-"Mrs",
-"Ms",
-"Prof",
-"Pvt",
-"Rev",
-"Rt Hon",
-"Sgt"
-]
+{
+"Capt":{
+        "gender": "N",
+        "rare": true 
+    },
+"Cmdr":{
+        "gender": "N",
+        "rare": true 
+    },
+"Col":{
+        "gender": "N",
+        "rare": true 
+    },
+"Cpl":{
+        "gender": "N",
+        "rare": true 
+    },
+"Dr":{
+        "gender": "N",
+        "rare": false 
+    },
+"Gen":{
+        "gender": "N",
+        "rare": true 
+    },
+"Hon":{
+        "gender": "N",
+        "rare": true 
+    },
+"Lady":{
+        "gender": "F",
+        "rare": true 
+    },
+"Lord":{
+        "gender": "M",
+        "rare": true 
+    },
+"Lt":{
+        "gender": "N",
+        "rare": true 
+    },
+"Lt Col":{
+        "gender": "N",
+        "rare": true 
+    },
+"Maj":{
+        "gender": "N",
+        "rare": true 
+    },
+"Master":{
+        "gender": "M",
+        "rare": false 
+    },
+"Miss":{
+        "gender": "F",
+        "rare": false
+    },
+"Mr":{
+        "gender": "M",
+        "rare": false 
+    },
+"Mrs":{
+        "gender": "F",
+        "rare": false
+    },
+"Ms":{
+        "gender": "F",
+        "rare": false
+    },
+"Prof":{
+        "gender": "N",
+        "rare": false
+    },
+"Pvt":{
+        "gender": "N",
+        "rare": true
+    },
+"Rev":{
+        "gender": "N",
+        "rare": true
+    },
+"Rt Hon":{
+        "gender": "N",
+        "rare": true 
+    },
+"Sgt":{
+        "gender": "N",
+        "rare": true 
+    }
+}
