@@ -56,10 +56,8 @@ function random(limit){
 function choose(){
     //Get a random title, forname, and surname from the list
     var randomTitle = getValues(titles);
-    //var randomForename = getValues(forenames);
-    //var randomSurname = getValues(surnames);
-    var randomForename = forenames[random(forenames.length-1)];
-    var randomSurname = surnames[random(surnames.length-1)];
+    var randomForename = getValues(forenames);
+    var randomSurname = getValues(surnames);
     //Output it
     document.getElementById("name").innerHTML = randomTitle + " " + randomForename + " " + randomSurname;
 }

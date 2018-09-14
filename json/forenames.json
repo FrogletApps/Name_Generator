@@ -1,30 +1,169 @@
 [
-"John",
-"James",
-"Jane",
-"Oliver",
-"George",
-"Harry",
-"Jack",
-"Jacob",
-"Noah",
-"Charlie",
-"Muhammad",
-"Thomas",
-"Oscar",
-"Henry",
-"Olivia",
-"Amelia",
-"Emily",
-"Isla",
-"Ava",
-"Eve",
-"Jessica",
-"Isabella",
-"Lily",
-"Ella",
-"Mia",
-"Harvey",
-"Emma",
-"Anna"
+    {
+        "value": "John",
+        "gender": "M",
+        "rare": false 
+    },
+    {
+        "value": "James",
+        "gender": "M",
+        "rare": false 
+    },
+    {
+        "value": "Oliver",
+        "gender": "M",
+        "rare": false 
+    },
+    {
+        "value": "George",
+        "gender": "M",
+        "rare": false 
+    },
+    {
+        "value": "Harry",
+        "gender": "M",
+        "rare": false 
+    },
+    {
+        "value": "Jack",
+        "gender": "M",
+        "rare": false 
+    },
+    {
+        "value": "Jacob",
+        "gender": "M",
+        "rare": false 
+    },
+    {
+        "value": "Noah",
+        "gender": "M",
+        "rare": false 
+    },
+    {
+        "value": "Charlie",
+        "gender": "M",
+        "rare": false 
+    },
+    {
+        "value": "Charles",
+        "gender": "M",
+        "rare": false 
+    },
+    {
+        "value": "Muhammad",
+        "gender": "M",
+        "rare": false 
+    },
+    {
+        "value": "Thomas",
+        "gender": "M",
+        "rare": false 
+    },
+    {
+        "value": "Tom",
+        "gender": "M",
+        "rare": false 
+    },
+    {
+        "value": "Oscar",
+        "gender": "M",
+        "rare": false 
+    },
+    {
+        "value": "Henry",
+        "gender": "M",
+        "rare": false 
+    },
+    {
+        "value": "Harvey",
+        "gender": "M",
+        "rare": false 
+    },
+    {
+        "value": "Peter",
+        "gender": "M",
+        "rare": false 
+    },
+
+
+    {
+        "value": "Jane",
+        "gender": "F",
+        "rare": false 
+    },
+    {
+        "value": "Olivia",
+        "gender": "F",
+        "rare": false 
+    },
+    {
+        "value": "Amelia",
+        "gender": "F",
+        "rare": false 
+    },
+    {
+        "value": "Amy",
+        "gender": "F",
+        "rare": false 
+    },
+    {
+        "value": "Emily",
+        "gender": "F",
+        "rare": false 
+    },
+    {
+        "value": "Emma",
+        "gender": "F",
+        "rare": false 
+    },
+    {
+        "value": "Eve",
+        "gender": "F",
+        "rare": false 
+    },
+    {
+        "value": "Jessica",
+        "gender": "F",
+        "rare": false 
+    },
+    {
+        "value": "Jess",
+        "gender": "F",
+        "rare": false 
+    },
+    {
+        "value": "Isabella",
+        "gender": "F",
+        "rare": false 
+    },
+    {
+        "value": "Gertrude",
+        "gender": "F",
+        "rare": false 
+    },
+    {
+        "value": "Lily",
+        "gender": "F",
+        "rare": false 
+    },
+    {
+        "value": "Ella",
+        "gender": "F",
+        "rare": false 
+    },
+    {
+        "value": "Mia",
+        "gender": "F",
+        "rare": false 
+    },
+    {
+        "value": "Anna",
+        "gender": "F",
+        "rare": false 
+    },
+    {
+        "value": "Anne",
+        "gender": "F",
+        "rare": false 
+    }
 ]
