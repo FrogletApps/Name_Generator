@@ -14,7 +14,7 @@ readJsonValues(titlesJsonUrl, titles);
 readJsonValues(forenamesJsonUrl, forenames);
 readJsonValues(surnamesJsonUrl, surnames);
 
-//Get values from JSON
+//Get values from the JSON files
 function readJsonValues(url, output){
     $.getJSON(url, function(json){
         $.each(json, function(i, field){
@@ -23,26 +23,23 @@ function readJsonValues(url, output){
     });
 }
 
-//Pick a random value from the jsonData array
-function randomArrayValues(jsonData){
-    //Length of the JSON array
-    var jsonLength = Object.keys(jsonData).length;
-    //Number in the array to pick
-    var randomChoice = random(jsonLength - 1);
-    return jsonData[randomChoice].value;
+//Pick random values from the jsonData arrays
+function randomArrayValues(titlesArray, forenamesArray, surnamesArray){
+    //Number in each array to pick
+    var randomTitle = random(titlesArray.length);
+    var randomForename = random(titlesArray.length);
+    var randomSurname = random(titlesArray.length);
+
+    return titlesArray[randomTitle].value + " " + forenamesArray[randomForename].value + " " + surnamesArray[randomSurname].value;
 }
 
-//Generates a random number between 0 and the limit
+//Generates a random number between 0 and (limit - 1)
+//This is because the input is always the length which includes the 0th value
 function random(limit){
-    return Math.round(Math.random()*limit);
+    return Math.round(Math.random()*(limit - 1));
 }
 
 //Choose a random name
 function choose(){
-    //Get a random title, forname, and surname from the list
-    var randomTitle = randomArrayValues(titles);
-    var randomForename = randomArrayValues(forenames);
-    var randomSurname = randomArrayValues(surnames);
-    //Output it
-    document.getElementById("name").innerHTML = randomTitle + " " + randomForename + " " + randomSurname;
+    document.getElementById("name").innerHTML = randomArrayValues(titles, forenames, surnames);
 }
