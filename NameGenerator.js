@@ -10,38 +10,23 @@ var titlesJsonUrl = "https://frogletapps.github.io/Name_Generator/json/titles.js
 var forenamesJsonUrl = "https://frogletapps.github.io/Name_Generator/json/forenames.json";
 var surnamesJsonUrl = "https://frogletapps.github.io/Name_Generator/json/surnames.json";
 
-//Get titles from JSON
-$.getJSON(titlesJsonUrl, 
-    function(titlesJson){
-        $.each(titlesJson, function(i, field){
-            titles.push(field);
-        });
-    }
-);
+readJsonValues(titlesJsonUrl, titles);
+readJsonValues(forenamesJsonUrl, forenames);
+readJsonValues(surnamesJsonUrl, surnames);
 
-//Get forenames from JSON
-$.getJSON(forenamesJsonUrl,
-    function(forenamesJson){
-        $.each(forenamesJson, function(i, field){
-            forenames.push(field);
+//Get values from JSON
+function readJsonValues(url, output){
+    $.getJSON(url, function(json){
+        $.each(json, function(i, field){
+            output.push(field);
         });
-    }
-);
+    });
+}
 
-//Get surnames from JSON
-$.getJSON(surnamesJsonUrl, 
-    function(surnamesJson){
-        $.each(surnamesJson, function(i, field){
-            surnames.push(field);
-        });
-    }
-);
-
-//Pick a random value from the jsonData
-function getValues(jsonData){
+//Pick a random value from the jsonData array
+function randomArrayValues(jsonData){
     //Length of the JSON array
     var jsonLength = Object.keys(jsonData).length;
-    console.log(jsonLength);
     //Number in the array to pick
     var randomChoice = random(jsonLength - 1);
     return jsonData[randomChoice].value;
@@ -55,9 +40,9 @@ function random(limit){
 //Choose a random name
 function choose(){
     //Get a random title, forname, and surname from the list
-    var randomTitle = getValues(titles);
-    var randomForename = getValues(forenames);
-    var randomSurname = getValues(surnames);
+    var randomTitle = randomArrayValues(titles);
+    var randomForename = randomArrayValues(forenames);
+    var randomSurname = randomArrayValues(surnames);
     //Output it
     document.getElementById("name").innerHTML = randomTitle + " " + randomForename + " " + randomSurname;
 }
