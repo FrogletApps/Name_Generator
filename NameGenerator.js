@@ -2,10 +2,6 @@ var titles = [];
 var forenames = [];
 var surnames = [];
 
-var randomTitle;
-
-var limit = 0;
-
 var titlesJsonUrl = "https://frogletapps.github.io/Name_Generator/json/titles.json";
 var forenamesJsonUrl = "https://frogletapps.github.io/Name_Generator/json/forenames.json";
 var surnamesJsonUrl = "https://frogletapps.github.io/Name_Generator/json/surnames.json";
