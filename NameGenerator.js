@@ -26,6 +26,10 @@ function randomArrayValues(titlesArray, forenamesArray, surnamesArray){
     var randomForename = random(titlesArray.length);
     var randomSurname = random(titlesArray.length);
 
+    //If the gender of the title and firstname don't match then pick a new title
+    while (titlesArray[randomTitle].gender != "N" && titlesArray[randomTitle].gender != forenamesArray[randomForename].gender){
+        randomTitle = random(titlesArray.length);
+    }
     return titlesArray[randomTitle].value + " " + forenamesArray[randomForename].value + " " + surnamesArray[randomSurname].value;
 }
 
