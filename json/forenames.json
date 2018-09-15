@@ -1,169 +1,136 @@
 [
     {
         "value": "John",
-        "gender": "M",
-        "rare": false 
+        "gender": "M"
     },
     {
         "value": "James",
-        "gender": "M",
-        "rare": false 
+        "gender": "M"
     },
     {
         "value": "Oliver",
-        "gender": "M",
-        "rare": false 
+        "gender": "M"
     },
     {
         "value": "George",
-        "gender": "M",
-        "rare": false 
+        "gender": "M"
     },
     {
         "value": "Harry",
-        "gender": "M",
-        "rare": false 
+        "gender": "M"
     },
     {
         "value": "Jack",
-        "gender": "M",
-        "rare": false 
+        "gender": "M"
     },
     {
         "value": "Jacob",
-        "gender": "M",
-        "rare": false 
+        "gender": "M"
     },
     {
         "value": "Noah",
-        "gender": "M",
-        "rare": false 
+        "gender": "M"
     },
     {
         "value": "Charlie",
-        "gender": "M",
-        "rare": false 
+        "gender": "M"
     },
     {
         "value": "Charles",
-        "gender": "M",
-        "rare": false 
+        "gender": "M"
     },
     {
         "value": "Muhammad",
-        "gender": "M",
-        "rare": false 
+        "gender": "M"
     },
     {
         "value": "Thomas",
-        "gender": "M",
-        "rare": false 
+        "gender": "M"
     },
     {
         "value": "Tom",
-        "gender": "M",
-        "rare": false 
+        "gender": "M" 
     },
     {
         "value": "Oscar",
-        "gender": "M",
-        "rare": false 
+        "gender": "M"
     },
     {
         "value": "Henry",
-        "gender": "M",
-        "rare": false 
+        "gender": "M"
     },
     {
         "value": "Harvey",
-        "gender": "M",
-        "rare": false 
+        "gender": "M"
     },
     {
         "value": "Peter",
-        "gender": "M",
-        "rare": false 
+        "gender": "M"
     },
 
 
     {
         "value": "Jane",
-        "gender": "F",
-        "rare": false 
+        "gender": "F"
     },
     {
         "value": "Olivia",
-        "gender": "F",
-        "rare": false 
+        "gender": "F"
     },
     {
         "value": "Amelia",
-        "gender": "F",
-        "rare": false 
+        "gender": "F"
     },
     {
         "value": "Amy",
-        "gender": "F",
-        "rare": false 
+        "gender": "F"
     },
     {
         "value": "Emily",
-        "gender": "F",
-        "rare": false 
+        "gender": "F"
     },
     {
         "value": "Emma",
-        "gender": "F",
-        "rare": false 
+        "gender": "F"
     },
     {
         "value": "Eve",
-        "gender": "F",
-        "rare": false 
+        "gender": "F"
     },
     {
         "value": "Jessica",
-        "gender": "F",
-        "rare": false 
+        "gender": "F"
     },
     {
         "value": "Jess",
-        "gender": "F",
-        "rare": false 
+        "gender": "F" 
     },
     {
         "value": "Isabella",
-        "gender": "F",
-        "rare": false 
+        "gender": "F"
     },
     {
         "value": "Gertrude",
-        "gender": "F",
-        "rare": false 
+        "gender": "F"
     },
     {
         "value": "Lily",
-        "gender": "F",
-        "rare": false 
+        "gender": "F"
     },
     {
         "value": "Ella",
-        "gender": "F",
-        "rare": false 
+        "gender": "F"
     },
     {
         "value": "Mia",
-        "gender": "F",
-        "rare": false 
+        "gender": "F"
     },
     {
         "value": "Anna",
-        "gender": "F",
-        "rare": false 
+        "gender": "F"
     },
     {
         "value": "Anne",
-        "gender": "F",
-        "rare": false 
+        "gender": "F"
     }
 ]
