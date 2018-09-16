@@ -23,8 +23,8 @@ function readJsonValues(url, output){
 function randomArrayValues(titlesArray, forenamesArray, surnamesArray){
     //Number in each array to pick
     var randomTitle = random(titlesArray.length);
-    var randomForename = random(titlesArray.length);
-    var randomSurname = random(titlesArray.length);
+    var randomForename = random(forenamesArray.length);
+    var randomSurname = random(surnamesArray.length);
 
     var rareTitleChance = 0.5;
     var rareTitlePick = Math.random();
