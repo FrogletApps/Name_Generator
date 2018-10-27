@@ -1,6 +1,5 @@
 {
-    "name": "Froglet Apps - Name Generator",
-    "short_name": "Name Gen",
+    "name": "Name Generator",
     "lang": "en-GB",
     "start_url": "NameGenerator.html",
     "theme_color": "#224422",
