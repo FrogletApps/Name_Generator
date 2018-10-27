@@ -1,2 +1,2 @@
 # Name Generator
-Some code to generate random names
+A webapp for generating random names
