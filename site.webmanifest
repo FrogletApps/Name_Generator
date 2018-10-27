@@ -1,6 +1,11 @@
 {
     "name": "Froglet Apps - Name Generator",
     "short_name": "Name Gen",
+    "lang": "en-GB",
+    "start_url": "NameGenerator.html",
+    "theme_color": "#00a300",
+    "background_color": "#224422",
+    "display": "standalone",
     "icons": [
         {
             "src": "https://frogletapps.github.io/Assets/android-chrome-192x192.png",
@@ -17,8 +22,5 @@
             "sizes": "512x512",
             "type": "image/png"
         }
-    ],
-    "theme_color": "#00a300",
-    "background_color": "#00a300",
-    "display": "standalone"
+    ]
 }

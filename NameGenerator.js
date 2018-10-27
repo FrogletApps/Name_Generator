@@ -48,3 +48,14 @@ function random(limit){
 function choose(){
     document.getElementById("name").innerHTML = randomArrayValues(titles, forenames, surnames);
 }
+
+//Ensures that the page can work offline
+UpUp.start({
+    "content-url": "NameGenerator.html",
+    "assets":[
+        "json/forenames.json",
+        "json/surnames.json",
+        "json/titles.json",
+        "NameGenerator.js"
+    ]
+});
