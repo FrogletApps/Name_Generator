@@ -2,9 +2,9 @@ var titles = [];
 var forenames = [];
 var surnames = [];
 
-var titlesJsonUrl = "https://frogletapps.github.io/Name_Generator/json/titles.json";
-var forenamesJsonUrl = "https://frogletapps.github.io/Name_Generator/json/forenames.json";
-var surnamesJsonUrl = "https://frogletapps.github.io/Name_Generator/json/surnames.json";
+var titlesJsonUrl = "https://frogletapps.github.io/Random_Names/json/titles.json";
+var forenamesJsonUrl = "https://frogletapps.github.io/Random_Names/json/forenames.json";
+var surnamesJsonUrl = "https://frogletapps.github.io/Random_Names/json/surnames.json";
 
 readJsonValues(titlesJsonUrl, titles);
 readJsonValues(forenamesJsonUrl, forenames);
@@ -51,11 +51,11 @@ function choose(){
 
 //Ensures that the page can work offline
 UpUp.start({
-    "content-url": "NameGenerator.html",
+    "content-url": "random_names.html",
     "assets":[
         "json/forenames.json",
         "json/surnames.json",
         "json/titles.json",
-        "NameGenerator.js"
+        "random_names.js"
     ]
 });

@@ -1,7 +1,8 @@
 {
-    "name": "Name Generator",
+    "name": "Random Names",
+    "short_name": "Random Name Generator",
     "lang": "en-GB",
-    "start_url": "NameGenerator.html",
+    "start_url": "random_names.html",
     "theme_color": "#224422",
     "background_color": "#224422",
     "display": "standalone",
