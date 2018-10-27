@@ -1,6 +1,6 @@
 {
-    "name": "Random Names",
-    "short_name": "Random Name Generator",
+    "name": "Random Name Generator",
+    "short_name": "Random Names",
     "lang": "en-GB",
     "start_url": "random_names.html",
     "theme_color": "#224422",
