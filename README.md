@@ -1,2 +1,2 @@
 # Name Generator
-A webapp for generating random names
+A PWA for generating random names
