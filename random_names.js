@@ -26,15 +26,25 @@ function randomArrayValues(titlesArray, forenamesArray, surnamesArray){
     var randomForename = random(forenamesArray.length);
     var randomSurname = random(surnamesArray.length);
 
-    var rareTitleChance = 0.5;
+    var genderInput = document.getElementById("genderSelect").value;
+
+    var rareTitleChance = 0.4;
     var rareTitlePick = Math.random();
 
-    //If the gender of the title and firstname don't match OR the title is too rare then pick a new title
-    while (titlesArray[randomTitle].gender != "N" && 
-           titlesArray[randomTitle].gender != forenamesArray[randomForename].gender ||
-           (titlesArray[randomTitle].rare == true && rareTitleChance <= rareTitlePick)){
-                randomTitle = random(titlesArray.length);
+    while (forenamesArray[randomForename].gender != genderInput &&
+        forenamesArray[randomForename].gender != "N"){
+            randomForename = random(forenamesArray.length);
+            console.log(randomForename);
+            console.log("randomForename");
+            console.log(forenamesArray[randomForename].gender);
     }
+
+    while (titlesArray[randomTitle].gender != "N" &&
+    titlesArray[randomTitle].gender != forenamesArray[randomForename].gender ||
+    (titlesArray[randomTitle].rare == true && rareTitleChance <= rareTitlePick)){
+         randomTitle = random(titlesArray.length);
+    }
+    
     return titlesArray[randomTitle].value + " " + forenamesArray[randomForename].value + " " + surnamesArray[randomSurname].value;
 }
 
@@ -47,6 +57,18 @@ function random(limit){
 //Choose a random name
 function choose(){
     document.getElementById("name").innerHTML = randomArrayValues(titles, forenames, surnames);
+}
+
+//Toggle the visibility of the settings bar
+function toggleVisibility(){
+    if(document.getElementById("settingsBar").style.display == "none"){
+        document.getElementById("settingsBar").style.display = "block";
+        document.getElementById("hideButton").value = "Hide";
+    }
+    else{
+        document.getElementById("settingsBar").style.display = "none";
+        document.getElementById("hideButton").value = "Show";
+    }
 }
 
 //Ensures that the page can work offline

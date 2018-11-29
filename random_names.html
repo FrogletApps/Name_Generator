@@ -25,8 +25,18 @@
 	<body>
 		<div id="topBar">
 			<h1>Random Name Generator</h1>
-        </div>
-        
+		</div>
+		<div id="topLeft">
+			<input type="button" id="hideButton" value="Hide" onclick="toggleVisibility();" />
+		</div>
+		<div id="settingsBar">
+			<label for="genderSelect">Choose the type of name you want to display:&nbsp; </label>
+			<select id="genderSelect" onChange="run()">
+				<option value="N">Don't mind</option>
+				<option value="M">Male</option>
+				<option value="F">Female</option>
+			</select> 
+		</div>
         <br>
 
         <div id="center">
