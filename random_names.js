@@ -41,8 +41,8 @@ function randomArrayValues(titlesArray, forenamesArray, surnamesArray){
     var rareTitlePick = Math.random();
 
     while (forenamesArray[randomForename].gender != genderInput &&
-            forenamesArray[randomForename].gender != genderInput2 &&
-            forenamesArray[randomForename].gender != "N"){
+        forenamesArray[randomForename].gender != genderInput2 &&
+        forenamesArray[randomForename].gender != "N") {
             randomForename = random(forenamesArray.length);
             console.log(randomForename);
             console.log("randomForename");
