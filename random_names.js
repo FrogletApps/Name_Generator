@@ -27,12 +27,22 @@ function randomArrayValues(titlesArray, forenamesArray, surnamesArray){
     var randomSurname = random(surnamesArray.length);
 
     var genderInput = document.getElementById("genderSelect").value;
+    var genderInput2;
+
+    if (genderInput == "N"){
+        genderInput = "M";
+        genderInput2 = "F";
+    }
+    else {
+        genderInput2 = genderInput;
+    }
 
     var rareTitleChance = 0.4;
     var rareTitlePick = Math.random();
 
     while (forenamesArray[randomForename].gender != genderInput &&
-        forenamesArray[randomForename].gender != "N"){
+            forenamesArray[randomForename].gender != genderInput2 &&
+            forenamesArray[randomForename].gender != "N"){
             randomForename = random(forenamesArray.length);
             console.log(randomForename);
             console.log("randomForename");
